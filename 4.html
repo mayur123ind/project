@@ -1,0 +1,25 @@
+<!-- Inheritance -->
+<script>
+    //single level Inheritance
+    class A{
+         myfunc1() {
+            console.log("This is A");
+        }
+    }
+    class B extends A{
+         myfunc2() {
+            console.log("This is B");
+        }
+        myfunc1() //method overriding
+        {
+            super.myfunc1(); // it is use to acess member from parent class
+            console.log("class b my 1");
+        }
+    }
+    var rec = new  B();
+    console.log(rec);
+   
+    rec.myfunc1();
+    rec.myfunc2();
+
+</script>
